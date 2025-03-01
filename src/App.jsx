@@ -1,17 +1,26 @@
-
-
 import './App.css'
 
-function App() {
 
+function App() {
+  const animals = ["Lion", "Cow", "Snake", "Lizard", "rat"];
 
   return (
-    <>
-      <h2>
-        working
-      </h2>
-    </>
-  )
+    <div>
+      <h1>Animals: </h1>
+      <ul>
+        {animals.map((animal) => {
+          return <li key={animal}>{animal}</li>;
+        })}
+      </ul>
+    </div>
+  );
 }
+
+
+
+
+
+
+
 
 export default App
